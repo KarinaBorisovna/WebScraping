@@ -48,7 +48,7 @@ for article in articles:
 
         for p in all_text:
             
-            if p.text.lower().find(word) == -1:
+            if p.text.lower().find(word) != -1:
                 articles_dict[span_title] = f'{public_date[0]} - "{span_title}" - {article_link}'
                 
 for value in articles_dict.values():
